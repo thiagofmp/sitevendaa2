@@ -104,32 +104,30 @@ h1 {
 }
 
 form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os elementos do formulário */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    text-align: left; /* Alinha os rótulos à esquerda */
 }
 
 input[type="text"],
 input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
     outline: none;
     border-color: #2d56c7; /* Cor da borda ao focar */
-}
-
-/* Adicionando uma margem inferior para o campo "Telefone" */
-#telefone {
-    margin-bottom: 20px;
 }
 
 button {
